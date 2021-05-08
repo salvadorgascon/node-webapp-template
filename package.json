@@ -24,6 +24,8 @@
     "@fortawesome/free-solid-svg-icons": "^5.15.3",
     "@fortawesome/react-fontawesome": "^0.1.14",
     "axios": "^0.21.1",
+    "block-ui": "^2.70.1",
+    "bootbox": "^5.5.2",
     "bootstrap": "^5.0.0",
     "datatables.net": "^1.10.24",
     "datatables.net-autofill-bs4": "^2.3.6",
