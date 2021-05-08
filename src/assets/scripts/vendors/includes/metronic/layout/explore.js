@@ -21,6 +21,6 @@ var KTLayoutExplore = function() {
 }();
 
 // On document ready
-KTUtil.onDOMContentLoaded(function() {
-    KTLayoutExplore.init();
-});
+// KTUtil.onDOMContentLoaded(function() {
+    // KTLayoutExplore.init();
+// });

@@ -37,6 +37,6 @@ var KTLayoutAside = function () {
 }();
 
 // On document ready
-KTUtil.onDOMContentLoaded(function () {
-    KTLayoutAside.init();
-});
+// KTUtil.onDOMContentLoaded(function () {
+    // KTLayoutAside.init();
+// });
