@@ -3,7 +3,7 @@ import { Controller } from 'stimulus'
 import React from 'react'
 import ReactDOM from 'react-dom'
 
-// import App from "scripts/core/containers/app"
+import App from "scripts/core/containers/app"
 
 export default class extends Controller {
     constructor() {
@@ -11,6 +11,6 @@ export default class extends Controller {
     }
 
     connect() {
-        // ReactDOM.render(React.createElement(App), document.getElementById("react-app"));
+        ReactDOM.render(React.createElement(App), document.getElementById("react-app"));
     }
 }
