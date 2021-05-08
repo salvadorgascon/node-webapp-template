@@ -9,7 +9,7 @@ module.exports =(env, argv) => {
         mode: argv.mode == 'production' ? 'production' : 'development',
         entry: "./src/assets/packs/default.js",
 		output: {
-	    path:path.resolve(__dirname, "dist"),
+	    path:path.resolve(__dirname, "build"),
 	        filename: (argv.mode == 'production' ? '[name].bundle.[contenthash].js' : '[name].bundle.js'),
 	    },
 	    resolve: {
