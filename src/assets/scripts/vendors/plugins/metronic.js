@@ -37,15 +37,15 @@ require("es6-shim/es6-shim.min.js");
 // window.ApexCharts = require('apexcharts/dist/apexcharts.min.js');
 
 // FormValidation - Best premium validation library for JavaScript. Zero dependencies. Learn more: https://formvalidation.io/
-window.FormValidation = require('scripts/vendors/plugins/metronic/formvalidation/dist/js/FormValidation.full.min.js');
-window.FormValidation.plugins.Bootstrap5 = require('scripts/vendors/plugins/metronic/formvalidation/dist/amd/plugins/Bootstrap5.js').default;
+window.FormValidation = require('scripts/vendors/plugins/formvalidation/dist/js/FormValidation.full.min.js');
+window.FormValidation.plugins.Bootstrap5 = require('scripts/vendors/plugins/formvalidation/dist/amd/plugins/Bootstrap5.js').default;
 
 // Date Range Picker - A JavaScript component for choosing date ranges, dates and times: https://www.daterangepicker.com/
 require('bootstrap-daterangepicker/daterangepicker.js');
 
 // Bootstrap Maxlength - This plugin integrates by default with Twitter bootstrap using badges to display the maximum length of the field where the user is inserting text: https://github.com/mimo84/bootstrap-maxlength
 require('bootstrap-maxlength/src/bootstrap-maxlength.js');
-require('scripts/vendors/plugins/metronic/bootstrap-multiselectsplitter/bootstrap-multiselectsplitter.min.js');
+require('scripts/vendors/plugins/bootstrap-multiselectsplitter/bootstrap-multiselectsplitter.min.js');
 
 // Select2 - Select2 is a jQuery based replacement for select boxes: https://select2.org/
 require('select2/dist/js/select2.full.min.js');
@@ -82,10 +82,10 @@ window.Tagify = require('@yaireo/tagify/dist/tagify.min.js');
 window.toastr = require('toastr/build/toastr.min.js');
 
 // Bootstrap Session Timeout - Session timeout and keep-alive control with a nice Bootstrap warning dialog: https://github.com/orangehill/bootstrap-session-timeout
-window.sessionTimeout = require('scripts/vendors/plugins/metronic/bootstrap-session-timeout/dist/bootstrap-session-timeout.min.js');
+window.sessionTimeout = require('scripts/vendors/plugins/bootstrap-session-timeout/dist/bootstrap-session-timeout.min.js');
 
 // JQuery Idletimer - provides you a way to monitor user activity with a page: https://github.com/thorst/jquery-idletimer
-require('scripts/vendors/plugins/metronic/jquery-idletimer/idle-timer.min.js');
+require('scripts/vendors/plugins/jquery-idletimer/idle-timer.min.js');
 
 // ES6 Promise Polyfill - This is a polyfill of the ES6 Promise: https://github.com/lahmatiy/es6-promise-polyfill
 require('es6-promise-polyfill/promise.min.js');
