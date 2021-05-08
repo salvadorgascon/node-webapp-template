@@ -62,8 +62,20 @@ module.exports =(env, argv) => {
             }),
             new HtmlWebpackPlugin({
 				filename: 'index.html',
-	  		template: "src\\assets\\documents\\index.html"
-	  	}),
+	  		    template: "src\\assets\\documents\\index.html"
+	  	    }),
+            new HtmlWebpackPlugin({
+				filename: 'error-404.html',
+	  		    template: "src\\assets\\documents\\error-404.html"
+	  	    }),
+            new HtmlWebpackPlugin({
+				filename: 'error-500.html',
+	  		    template: "src\\assets\\documents\\error-500.html"
+	  	    }),
+            new HtmlWebpackPlugin({
+                filename: 'not-logged.html',
+                template: "src\\assets\\documents\\not-logged.html"
+	  	    }),
         ]
     };
 };
