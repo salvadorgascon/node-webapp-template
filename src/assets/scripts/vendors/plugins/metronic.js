@@ -37,8 +37,8 @@ require("es6-shim/es6-shim.min.js");
 // window.ApexCharts = require('apexcharts/dist/apexcharts.min.js');
 
 // FormValidation - Best premium validation library for JavaScript. Zero dependencies. Learn more: https://formvalidation.io/
-// window.FormValidation = require('@/src/plugins/formvalidation/dist/js/FormValidation.full.min.js');
-// window.FormValidation.plugins.Bootstrap5 = require('@/src/plugins/formvalidation/dist/amd/plugins/Bootstrap5.js').default;
+window.FormValidation = require('scripts/vendors/plugins/metronic/formvalidation/dist/js/FormValidation.full.min.js');
+window.FormValidation.plugins.Bootstrap5 = require('scripts/vendors/plugins/metronic/formvalidation/dist/amd/plugins/Bootstrap5.js').default;
 
 // Date Range Picker - A JavaScript component for choosing date ranges, dates and times: https://www.daterangepicker.com/
 require('bootstrap-daterangepicker/daterangepicker.js');
@@ -92,7 +92,7 @@ require('es6-promise-polyfill/promise.min.js');
 
 // Sweetalert2 - a beautiful, responsive, customizable and accessible (WAI-ARIA) replacement for JavaScript's popup boxes: https://sweetalert2.github.io/
 window.Swal = window.swal = require('sweetalert2/dist/sweetalert2.min.js');
-// require('@/src/js/vendors/plugins/sweetalert2.init.js');
+require('scripts/vendors/includes/metronic/vendors/plugins/sweetalert2.init.js');
 
 // CountUp.js - is a dependency-free, lightweight JavaScript class that can be used to quickly create animations that display numerical data in a more interesting way.
 window.countUp = require('countup.js/dist/countUp.withPolyfill.min.js');
