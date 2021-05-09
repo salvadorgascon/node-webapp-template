@@ -64,7 +64,9 @@ class App extends React.Component {
                     <Wrapper>
                       <Header/>
                       <Content>
-                        <Toolbar>                        
+                        <Toolbar>  
+                          <Switch>
+                          </Switch>                      
                         </Toolbar>                        
                         <Post>
                           <Switch>
