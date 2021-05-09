@@ -69,6 +69,6 @@ var KTLayoutToolbar = function () {
 }();
 
 // On document ready
-/* KTUtil.onDOMContentLoaded(function () {
+KTUtil.onDOMContentLoaded(function () {
     KTLayoutToolbar.init();
-}); */
+});

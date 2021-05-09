@@ -402,14 +402,14 @@ var KTApp = function() {
 }();
 
 // On document ready
-// KTUtil.onDOMContentLoaded(function() {
-    // KTApp.init();
-// });
+KTUtil.onDOMContentLoaded(function() {
+    KTApp.init();
+});
 
 // On window load
-// window.addEventListener("load", function() {
-	// KTApp.initPageLoader();
-// });
+window.addEventListener("load", function() {
+	KTApp.initPageLoader();
+});
 
 // Webpack support
 if (typeof module !== 'undefined' && typeof module.exports !== 'undefined') {

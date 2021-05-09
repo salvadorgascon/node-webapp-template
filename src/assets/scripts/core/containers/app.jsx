@@ -19,6 +19,7 @@ import Wrapper from 'scripts/core/components/layouts/wrapper'
 import RootWrapper from 'scripts/core/components/layouts/root-wrapper'
 import Page from 'scripts/core/components/layouts/page'
 import Header from 'scripts/core/components/layouts/header'
+import Toolbar from 'scripts/core/components/layouts/toolbar'
 import HeaderMobile from 'scripts/core/components/layouts/header-mobile'
 import Footer from 'scripts/core/components/layouts/footer'
 import QuickUser from 'scripts/core/components/layouts/quick-user'
@@ -48,6 +49,7 @@ class App extends React.Component {
     }
   
     componentWillUnmount() {
+
     }
   
     render() {
@@ -55,27 +57,31 @@ class App extends React.Component {
         <Provider store={this.store}>
           <IntlProvider locale={this.language} messages={window.intlMessages}>
               <HashRouter>
-              <HeaderMobile />
-              <RootWrapper>
-                <Page>
-                  <Wrapper>
-                    <Header/>
-                    <Content>
-                      <Switch>
-                      </Switch>
-                    </Content>
-                    <Footer />
-                  </Wrapper>
-                </Page>
-              </RootWrapper>
-              <QuickUser/>
-              <ScrollTop/>
+                <HeaderMobile />
+                <RootWrapper>
+                  <Page>
+                    <Wrapper>
+                      <Header/>
+                      <Content>
+                        <Toolbar/>
+                          <div className="post d-flex flex-column-fluid" id="kt_post">
+                            <div id="kt_content_container" className="container"></div>
+                          </div>
+                        <Switch>
+                        </Switch>
+                      </Content>
+                      <Footer />
+                    </Wrapper>
+                  </Page>
+                </RootWrapper>
+                <QuickUser/>
+                <ScrollTop/>
               </HashRouter>
           </IntlProvider>
         </Provider>);
     }
   }
-  
+
   export default App
   
   
