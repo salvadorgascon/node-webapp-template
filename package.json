@@ -2,12 +2,13 @@
   "name": "node-webapp-template",
   "version": "1.0.0",
   "description": "NodeJS web application template",
-  "main": "index.js",
+  "main": "src\\index.js",
   "scripts": {
-    "build": "webpack --progress --profile",
+    "build": "webpack --progress --profile",    
     "watch": "webpack --progress --profile --watch",
+    "review": "npx eslint --config eslint.json src\\",
     "devstart": "webpack serve --progress --profile",
-    "devreview": "npx eslint --config eslint.json src\\",
+    "start": "node src\\index.js",    
     "test": "jest"
   },
   "jest": {
@@ -51,6 +52,7 @@
     "bootstrap-maxlength": "^1.10.1",
     "bootstrap-multiselectsplitter": "^1.0.4",
     "clipboard": "^2.0.8",
+    "compression": "^1.7.4",
     "countup.js": "^2.0.7",
     "datatables.net": "^1.10.24",
     "datatables.net-autofill-bs4": "^2.3.6",
@@ -71,6 +73,7 @@
     "es6-promise-polyfill": "^1.2.0",
     "es6-shim": "^0.35.6",
     "express": "^4.17.1",
+    "express-session": "^1.17.1",
     "flatpickr": "^4.6.9",
     "immutable": "^4.0.0-rc.12",
     "inputmask": "^5.0.5",
