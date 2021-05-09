@@ -6,6 +6,8 @@ import PropTypes from 'prop-types'
 import PageTitle from 'scripts/core/components/labels/page-title'
 import PageDescription from 'scripts/core/components/labels/page-description'
 
+import TextSeparator from 'scripts/core/components/labels/text-separator'
+
 import Breadcrumb from 'scripts/core/components/links/breadcrumb'
 import BreadcrumbHome from 'scripts/core/components/links/breadcrumb-home'
 import BreadcrumbRoute from 'scripts/core/components/links/breadcrumb-route'
@@ -18,7 +20,7 @@ const Toolbar = (props)=> {
         <div data-kt-place="true" data-kt-place-mode="prepend" data-kt-place-parent="{default: '#kt_content_container', 'lg': '#kt_toolbar_container'}" className="page-title d-flex align-items-center me-3 flex-wrap mb-5 mb-lg-0 lh-1">									
             <PageTitle text="Home"/>
             <PageDescription text="aassa"/>
-            <span className="h-20px border-gray-200 border-start mx-4"></span>
+            <TextSeparator/>
             <Breadcrumb>
                 <BreadcrumbHome/>
                 <BreadcrumbRoute text="Customers" route="/customers"/>
