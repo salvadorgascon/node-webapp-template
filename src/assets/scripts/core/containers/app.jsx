@@ -22,7 +22,6 @@ import Content from 'scripts/core/components/layouts/content'
 import Toolbar from 'scripts/core/components/layouts/toolbar'
 import Post from 'scripts/core/components/layouts/post'
 import Footer from 'scripts/core/components/layouts/footer'
-import QuickUser from 'scripts/core/components/layouts/quick-user'
 import ScrollTop from 'scripts/core/components/layouts/scroll-top'
 
 class App extends React.Component {
@@ -75,7 +74,6 @@ class App extends React.Component {
                     </Wrapper>
                   </Page>
                 </RootWrapper>
-                <QuickUser/>
                 <ScrollTop/>
               </HashRouter>
           </IntlProvider>
