@@ -14,13 +14,14 @@ import thunk from 'redux-thunk';
 import getHtmlLanguage from 'scripts/core/functions/dom/get-html-language';
 import buildIntlMessages from 'scripts/core/functions/build-intl-messages';
 
-import Content from 'scripts/core/components/layouts/content'
-import Wrapper from 'scripts/core/components/layouts/wrapper'
+import HeaderMobile from 'scripts/core/components/layouts/header-mobile'
 import RootWrapper from 'scripts/core/components/layouts/root-wrapper'
 import Page from 'scripts/core/components/layouts/page'
+import Wrapper from 'scripts/core/components/layouts/wrapper'
 import Header from 'scripts/core/components/layouts/header'
+import Content from 'scripts/core/components/layouts/content'
 import Toolbar from 'scripts/core/components/layouts/toolbar'
-import HeaderMobile from 'scripts/core/components/layouts/header-mobile'
+import Post from 'scripts/core/components/layouts/post'
 import Footer from 'scripts/core/components/layouts/footer'
 import QuickUser from 'scripts/core/components/layouts/quick-user'
 import ScrollTop from 'scripts/core/components/layouts/scroll-top'
@@ -63,12 +64,12 @@ class App extends React.Component {
                     <Wrapper>
                       <Header/>
                       <Content>
-                        <Toolbar/>
-                          <div className="post d-flex flex-column-fluid" id="kt_post">
-                            <div id="kt_content_container" className="container"></div>
-                          </div>
-                        <Switch>
-                        </Switch>
+                        <Toolbar>                        
+                        </Toolbar>                        
+                        <Post>
+                          <Switch>
+                          </Switch>
+                        </Post>                        
                       </Content>
                       <Footer />
                     </Wrapper>
