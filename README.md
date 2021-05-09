@@ -1,5 +1,5 @@
 # node-webapp-template
-NodeJS web application template
+NodeJS web application template using Express and React to build a SPA application
 
 ## Authors
 
