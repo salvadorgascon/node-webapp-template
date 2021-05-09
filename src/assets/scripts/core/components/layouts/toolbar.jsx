@@ -3,6 +3,8 @@ import ReactDOM from 'react-dom'
 
 import PropTypes from 'prop-types'
 
+import PageTitle from 'scripts/core/components/labels/page-title'
+
 import Breadcrumb from 'scripts/core/components/links/breadcrumb'
 import BreadcrumbHome from 'scripts/core/components/links/breadcrumb-home'
 
@@ -12,7 +14,7 @@ const Toolbar = (props)=> {
         <div id="kt_toolbar_container" className="container-fluid d-flex flex-stack">
 
         <div data-kt-place="true" data-kt-place-mode="prepend" data-kt-place-parent="{default: '#kt_content_container', 'lg': '#kt_toolbar_container'}" className="page-title d-flex align-items-center me-3 flex-wrap mb-5 mb-lg-0 lh-1">									
-            <h1 className="d-flex align-items-center text-dark fw-bolder my-1 fs-3">Home</h1>
+            <PageTitle>Home</PageTitle>
             <span className="h-20px border-gray-200 border-start mx-4"></span>
             <Breadcrumb>
                 <BreadcrumbHome/>
