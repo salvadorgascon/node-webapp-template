@@ -14,7 +14,6 @@ import thunk from 'redux-thunk';
 import getHtmlLanguage from 'scripts/core/functions/dom/get-html-language';
 import buildIntlMessages from 'scripts/core/functions/build-intl-messages';
 
-import HeaderMobile from 'scripts/core/components/layouts/header-mobile'
 import RootWrapper from 'scripts/core/components/layouts/root-wrapper'
 import Page from 'scripts/core/components/layouts/page'
 import Wrapper from 'scripts/core/components/layouts/wrapper'
@@ -58,7 +57,6 @@ class App extends React.Component {
         <Provider store={this.store}>
           <IntlProvider locale={this.language} messages={window.intlMessages}>
               <HashRouter>
-                <HeaderMobile />
                 <RootWrapper>
                   <Page>
                     <Wrapper>
