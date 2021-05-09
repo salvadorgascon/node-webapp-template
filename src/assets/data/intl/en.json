@@ -1,3 +1,11 @@
 {
+    "yes": "Yes",
+    "no": "No",
+
+    "warning": "Warning",
+    "error": "Error",
+    "info": "Information",
+    "success": "Success",
     
+    "home": "Home"
 }
