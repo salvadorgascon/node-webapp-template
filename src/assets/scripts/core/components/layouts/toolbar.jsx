@@ -3,8 +3,6 @@ import ReactDOM from 'react-dom'
 
 import PropTypes from 'prop-types'
 
-
-
 const Toolbar = (props)=> {
 	return (
     <div className="toolbar" id="kt_toolbar">
