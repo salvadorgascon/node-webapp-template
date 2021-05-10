@@ -24,6 +24,14 @@ import Post from 'scripts/core/components/layouts/post'
 import Footer from 'scripts/core/components/layouts/footer'
 import ScrollTop from 'scripts/core/components/layouts/scroll-top'
 
+import PageTitle from 'scripts/core/components/labels/page-title'
+import PageDescription from 'scripts/core/components/labels/page-description'
+import TextSeparator from 'scripts/core/components/labels/text-separator'
+
+import Breadcrumb from 'scripts/core/components/links/breadcrumb'
+import BreadcrumbHome from 'scripts/core/components/links/breadcrumb-home'
+import BreadcrumbRoute from 'scripts/core/components/links/breadcrumb-route'
+
 class App extends React.Component {
     constructor(props) {
       super(props);      
@@ -60,13 +68,24 @@ class App extends React.Component {
                   <Page>
                     <Wrapper>
                       <Header/>
-                      <Content>
-                        <Toolbar>  
-                          <Switch>
-                          </Switch>                      
-                        </Toolbar>                        
+                      <Content>                        
+                        <Switch>
+                          <Route exact path="/">
+                            <Toolbar>
+                              <PageTitle text="Home"/>
+                              <PageDescription text="This is home"/>
+                              <TextSeparator/>
+                              <Breadcrumb>
+                                <BreadcrumbHome/>
+                                <BreadcrumbRoute text="Customers" route="/customers"/>
+                              </Breadcrumb>
+                            </Toolbar>
+                          </Route>
+                        </Switch>                                                                     
                         <Post>
                           <Switch>
+                            <Route exact path="/">
+                            </Route>
                           </Switch>
                         </Post>                        
                       </Content>

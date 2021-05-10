@@ -2,6 +2,15 @@
     "yes": "Yes",
     "no": "No",
 
+    "loading": "Loading ...",
+     "processing": "Processing ...",
+    "sending": "Sending ...",
+
+    "saving": "Saving ...",
+    "saved": "Saved",
+    "savingChanges": "Saving changes ...",
+    "savedChanges": "Saved changes",
+
     "warning": "Warning",
     "error": "Error",
     "info": "Information",

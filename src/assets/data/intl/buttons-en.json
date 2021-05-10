@@ -1,12 +1,28 @@
 {
+    "ok": "Ok",
+    "cancel": "Cancel",
+
     "edit": "Edit",
     "save": "Save",
     "saveChanges": "Save changes",
+    "back": "Back",
     "new": "New",
     "add": "Add",
-    "open": "Open",
-    "archive": "Archive",
+    "create": "Create",
+    "open": "Open",    
+
     "delete": "Delete",
+    "deleting": "Deleting",
+    "deleteConfirm": "Are you sure to delete this item?",
+    "deleteConfirmFormat": "Are you sure to delete \"{text}\"?",
+    "deleteError": "Error deleting record",
+    "deleteErrorFormat": "Error deleting \"{text}\"",
+    "deleteSuccess": "Record deleted",
+    "deleteSuccessFormat": "\"{text}\" deleted",
+
+    "archive": "Archive",    
+    "unarchive": "Unarchive",
+
     "upload": "Upload",
     "download": "Download",
     "import": "Import",
@@ -21,5 +37,7 @@
     "exportExcel": "Export to Spreasheet",
     "next": "Next",
     "previous": "Previous",
-    "clear": "Clear"
+    "clear": "Clear",
+    "close": "Close",
+    "actions": "Actions"
 }

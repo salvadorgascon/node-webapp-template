@@ -1,4 +1,4 @@
-import errorNotification from "scripts/core/functions/notifications/error-notification";
+﻿import errorNotification from "scripts/core/functions/notifications/error-notification";
 
 export default function ajaxPost(url, data, errorMessage, callback) {
   window.axios
