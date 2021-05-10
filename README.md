@@ -1,6 +1,11 @@
 # node-webapp-template
 NodeJS web application template using Express and React to build a SPA application
 
+## Features
+
+* ReactJs 17
+* Twitter Bootstrap 5
+
 ## Authors
 
 * [**salvadorgascon**](https://github.com/salvadorgascon) - *Initial work*
