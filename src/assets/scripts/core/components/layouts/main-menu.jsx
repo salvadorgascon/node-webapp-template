@@ -15,7 +15,6 @@ const MainMenu = (props)=> {
             <MenuDropDown text="Test1">
             <MenuItem route="/" text="Subtext1"/>
             </MenuDropDown>
-
         </div>);
 }
 

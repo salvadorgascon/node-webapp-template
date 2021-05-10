@@ -28,6 +28,8 @@ import PageTitle from 'scripts/core/components/labels/page-title'
 import PageDescription from 'scripts/core/components/labels/page-description'
 import TextSeparator from 'scripts/core/components/labels/text-separator'
 
+import ToolbarButtons from 'scripts/core/components/layouts/toolbar-buttons'
+
 import Breadcrumb from 'scripts/core/components/links/breadcrumb'
 import BreadcrumbHome from 'scripts/core/components/links/breadcrumb-home'
 import BreadcrumbRoute from 'scripts/core/components/links/breadcrumb-route'
@@ -71,15 +73,17 @@ class App extends React.Component {
                       <Content>                        
                         <Switch>
                           <Route exact path="/">
-                            <Toolbar>
-                              <PageTitle text="Home"/>
-                              <PageDescription text="This is home"/>
-                              <TextSeparator/>
-                              <Breadcrumb>
-                                <BreadcrumbHome/>
-                                <BreadcrumbRoute text="Customers" route="/customers"/>
-                              </Breadcrumb>
-                            </Toolbar>
+                            <Toolbar buttons={<ToolbarButtons><button>aasas</button></ToolbarButtons>}
+                              info={
+                                <React.Fragment>
+                                  <PageTitle text="Home"/>
+                                  <PageDescription text="This is home"/>
+                                  <TextSeparator/>
+                                  <Breadcrumb>
+                                    <BreadcrumbHome/>
+                                    <BreadcrumbRoute text="Customers" route="/customers"/>
+                                  </Breadcrumb>
+                                </React.Fragment>}/>
                           </Route>
                         </Switch>                                                                     
                         <Post>
