@@ -1,0 +1,28 @@
+{
+  "name": "node-webapp-template-server",
+  "version": "1.0.0",
+  "description": "NodeJS web application template",
+  "main": "src\\index.js",
+  "directories": {
+    "test": "test",
+    "start": "node src\\index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/salvadorgascon/node-webapp-template.git"
+  },
+  "author": "Salvador Gascon",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/salvadorgascon/node-webapp-template/issues"
+  },
+  "homepage": "https://github.com/salvadorgascon/node-webapp-template#readme",
+  "dependencies": {
+    "compression": "^1.7.4",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1"
+  }
+}
