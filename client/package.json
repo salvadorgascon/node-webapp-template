@@ -7,7 +7,7 @@
     "build": "webpack --progress --profile",
     "watch": "webpack --progress --profile --watch",
     "review": "npx eslint --config eslint.json src\\",
-    "devstart": "webpack serve --progress --profile",
+    "start": "webpack serve --progress --profile",
     "test": "jest"
   },
   "jest": {
