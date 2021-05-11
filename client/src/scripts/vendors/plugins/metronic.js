@@ -34,7 +34,7 @@ require("es6-shim/es6-shim.min.js");
 //////////////////////////////////////////////////////////////////////
 
 // Apexcharts - mBdern charting library that helps developers to create beautiful and interactive visualizations for web pages: https://apexcharts.com/
-// window.ApexCharts = require('apexcharts/dist/apexcharts.min.js');
+window.ApexCharts = require('apexcharts/dist/apexcharts.min.js');
 
 // FormValidation - Best premium validation library for JavaScript. Zero dependencies. Learn more: https://formvalidation.io/
 window.FormValidation = require('scripts/vendors/plugins/formvalidation/dist/js/FormValidation.full.min.js');
@@ -101,7 +101,7 @@ window.countUp = require('countup.js/dist/countUp.withPolyfill.min.js');
 // window.Chart = require('chart.js/dist/Chart.js');
 
 // Tiny slider - for all purposes, inspired by Owl Carousel.
-// window.tns = require('tiny-slider/src/tiny-slider.js').tns;
+window.tns = require('tiny-slider/src/tiny-slider.js').tns;
 
 // A lightweight script to animate scrolling to anchor links
 window.SmoothScroll = require('smooth-scroll/dist/smooth-scroll.js');

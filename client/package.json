@@ -31,6 +31,7 @@
   },
   "homepage": "https://github.com/salvadorgascon/node-webapp-template#readme",
   "dependencies": {
+    "@ckeditor/ckeditor5-build-balloon": "^27.1.0",
     "@fortawesome/fontawesome-free": "^5.15.3",
     "@fortawesome/fontawesome-svg-core": "^1.2.35",
     "@fortawesome/free-brands-svg-icons": "^5.15.3",
@@ -41,6 +42,7 @@
     "@shopify/draggable": "^1.0.0-beta.8",
     "@yaireo/tagify": "^4.1.1",
     "animate.css": "^4.1.1",
+    "apexcharts": "^3.26.2",
     "autosize": "^4.0.2",
     "axios": "^0.21.1",
     "block-ui": "^2.70.1",
@@ -93,6 +95,7 @@
     "store2": "^2.12.0",
     "styled-components": "^5.3.0",
     "sweetalert2": "^10.16.7",
+    "tiny-slider": "^2.9.3",
     "toastr": "^2.1.4",
     "typeahead.js": "^0.11.1",
     "wnumb": "^1.2.0"
