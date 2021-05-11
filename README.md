@@ -5,6 +5,9 @@ NodeJS web application template using Express and React to build a SPA applicati
 
 * ReactJs 17
 * Twitter Bootstrap 5
+* Express 4
+* Jest
+* Eslint
 
 ## Authors
 

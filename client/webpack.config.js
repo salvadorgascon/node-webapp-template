@@ -7,17 +7,17 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports =(env, argv) => {
     return {
         mode: argv.mode == 'production' ? 'production' : 'development',
-        entry: "./src/assets/packs/default.js",
+        entry: "./src/packs/default.js",
 		output: {
 	    path:path.resolve(__dirname, "build"),
 	        filename: (argv.mode == 'production' ? '[name].bundle.[contenthash].js' : '[name].bundle.js'),
 	    },
 	    resolve: {
 	  	    alias: {
-                data: path.resolve(__dirname, 'src/assets/data/'),
-                media: path.resolve(__dirname, 'src/assets/media/'),
-                scripts: path.resolve(__dirname, 'src/assets/scripts/'),
-                styles: path.resolve(__dirname, 'src/assets/styles/')
+                data: path.resolve(__dirname, 'src/data/'),
+                media: path.resolve(__dirname, 'src/media/'),
+                scripts: path.resolve(__dirname, 'src/scripts/'),
+                styles: path.resolve(__dirname, 'src/styles/')
             },
             extensions: [".js", ".json",".xml",".csv",".yml",".tsv",".jsx", ".css",".jsx",".scss",".ts",".tsx",".svg",".gif",".jpg",".jpeg",".png",".woff",".woff2",".eot",".ttf",".otf"],
         },
@@ -66,19 +66,19 @@ module.exports =(env, argv) => {
             }),
             new HtmlWebpackPlugin({
 				filename: 'index.html',
-	  		    template: "src\\assets\\documents\\index.html"
+	  		    template: "src\\documents\\index.html"
 	  	    }),
             new HtmlWebpackPlugin({
 				filename: 'error-404.html',
-	  		    template: "src\\assets\\documents\\error-404.html"
+	  		    template: "src\\documents\\error-404.html"
 	  	    }),
             new HtmlWebpackPlugin({
 				filename: 'error-500.html',
-	  		    template: "src\\assets\\documents\\error-500.html"
+	  		    template: "src\\documents\\error-500.html"
 	  	    }),
             new HtmlWebpackPlugin({
                 filename: 'not-logged.html',
-                template: "src\\assets\\documents\\not-logged.html"
+                template: "src\\documents\\not-logged.html"
 	  	    }),
         ]
     };

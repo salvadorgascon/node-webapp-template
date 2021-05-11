@@ -7,8 +7,7 @@
     "build": "webpack --progress --profile",    
     "watch": "webpack --progress --profile --watch",
     "review": "npx eslint --config eslint.json src\\",
-    "devstart": "webpack serve --progress --profile",
-    "start": "node src\\index.js",    
+    "devstart": "webpack serve --progress --profile",    
     "test": "jest"
   },
   "jest": {
@@ -18,7 +17,7 @@
     ],
     "moduleDirectories": [
       "node_modules",
-      "src\\assets\\scripts"
+      "src\\scripts"
     ]
   },
   "repository": {
