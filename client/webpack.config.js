@@ -25,7 +25,7 @@ module.exports =(env, argv) => {
         },
         devtool: "source-map",
         devServer: {
-            contentBase: './build',
+            contentBase: './build'            
         },
         module: {
             rules: [
